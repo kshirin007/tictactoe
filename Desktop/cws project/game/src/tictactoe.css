@@ -1,0 +1,74 @@
+.box {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+
+
+.btn{
+    background-color: #014182;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: calc(1rem);
+}
+
+
+
+@media screen and (max-width:100vh) {
+
+    /* For Mobile Devices */
+    .tic-tac-board {
+        display: grid;
+        width: 100%;
+        border: 10px solid bisque;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        aspect-ratio: 1/1;
+        background-color: #8e8f91;
+
+    }
+
+    .tic-tac-game-container {
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-height:100vw) {
+
+    /* For Desktop Devices */
+    .tic-tac-board {
+        display: grid;
+        background-color: gray;
+        width: 100%;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        aspect-ratio: 1/1;
+
+    }
+
+    .tic-tac-game-container {
+        width: 40%;
+        margin: 10px 0;
+        height: 80%;
+    }
+}
